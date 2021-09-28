@@ -31,7 +31,7 @@ export class TestTableComponent implements OnInit, OnDestroy, AfterViewInit {
   ngOnInit(): void {
     this.query = this.dbRef
       .orderByChild('timestamp')
-      .startAt((new Date()).valueOf() / 1000); 
+      .startAt((new Date()).valueOf()); 
 
     this.query.on('child_added', data => this.dataSource.dataAdded(data.val()));
   }
@@ -47,11 +47,10 @@ export class TestTableComponent implements OnInit, OnDestroy, AfterViewInit {
   }
 
   pushData(): void {
-    const newData: TestData = {
-      timestamp: (new Date()).valueOf() / 1000,
+    this.dbRef.push({
+      timestamp: (new Date()).valueOf(),
       operation: 'test'
-    }
-    this.dbRef.push(newData);
+    });
   }
 
 }

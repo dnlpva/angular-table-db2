@@ -28,8 +28,6 @@ export class TestTableDataSource extends DataSource<TestData> {
   }
 
   dataAdded(log: TestData): void {
-    //const log = data.val() as TestData;
-    console.log('Data added', log);
     this.data.push(log);
     this.dataRefresh.next();
   }
