@@ -33,7 +33,7 @@ export class TestTableComponent implements OnInit, OnDestroy, AfterViewInit {
       .orderByChild('timestamp')
       .startAt((new Date()).valueOf() / 1000); 
 
-    this.query.on('child_added', data => this.dataSource.childAdded(data.val()));
+    this.query.on('child_added', data => this.dataSource.dataAdded(data.val()));
   }
 
   ngOnDestroy(): void {

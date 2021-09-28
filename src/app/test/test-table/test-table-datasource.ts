@@ -27,7 +27,7 @@ export class TestTableDataSource extends DataSource<TestData> {
     this.dataRefresh = new Subject();
   }
 
-  childAdded(log: TestData): void {
+  dataAdded(log: TestData): void {
     //const log = data.val() as TestData;
     console.log('Data added', log);
     this.data.push(log);
