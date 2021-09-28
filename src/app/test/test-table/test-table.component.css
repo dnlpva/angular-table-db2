@@ -5,6 +5,7 @@
 
 .button-row {
   display: flex;
+  margin-top: 10px;
 }
 
 .full-width-table {
