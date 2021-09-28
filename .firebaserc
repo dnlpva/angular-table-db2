@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "hatley-intranet": {
+      "hosting": {
+        "intranet-office": [
+          "hatley-intranet"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "hatley-intranet"
+  }
+}

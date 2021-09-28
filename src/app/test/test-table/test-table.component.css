@@ -1,0 +1,12 @@
+:host {
+  display: grid;
+  padding: 10px;
+}
+
+.button-row {
+  display: flex;
+}
+
+.full-width-table {
+  width: 100%;
+}
