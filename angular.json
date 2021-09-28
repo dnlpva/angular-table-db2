@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "intranet-office": {
+    "angular-table-db1": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/intranet-office",
+            "outputPath": "dist/angular-table-db1",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +68,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "intranet-office:build"
+            "browserTarget": "angular-table-db1:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "intranet-office:build:production"
+              "browserTarget": "angular-table-db1:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "intranet-office:build"
+            "browserTarget": "angular-table-db1:build"
           }
         },
         "test": {
@@ -117,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "intranet-office:serve"
+            "devServerTarget": "angular-table-db1:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "intranet-office:serve:production"
+              "devServerTarget": "angular-table-db1:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "intranet-office"
+  "defaultProject": "angular-table-db1"
 }

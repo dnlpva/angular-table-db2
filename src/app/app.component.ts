@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'intranet-office';
+  title = 'angular-table-db1';
 
   constructor() { }
 

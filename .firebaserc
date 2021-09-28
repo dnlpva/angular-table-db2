@@ -1,14 +1,14 @@
 {
+  "projects": {
+    "test-staging": "test-3e0be"
+  },
   "targets": {
-    "hatley-intranet": {
+    "test-3e0be": {
       "hosting": {
-        "intranet-office": [
-          "hatley-intranet"
+        "angular-table-db1": [
+          "test-3e0be"
         ]
       }
     }
-  },
-  "projects": {
-    "default": "hatley-intranet"
   }
 }

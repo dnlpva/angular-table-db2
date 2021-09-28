@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/intranet-office",
+    "public": "dist/angular-table-db1",
     "ignore": [
       "firebase.json",
       "**/.*",
